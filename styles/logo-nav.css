@@ -1,0 +1,55 @@
+:root{
+    --color-logo-nav:#000;
+    --font-family : sans-serif;
+}
+
+
+/* ================================================= STYLE DIV WITH CLASS logo-nav  =============================== */
+
+.logo-nav {
+    padding:10px 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-nav .login a{
+    color:var(--color-logo-nav);
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+/*Styling logo*/
+
+
+.logo-nav .logo img {
+    max-width: 8rem;
+    display: block;
+    height: auto;
+}
+
+.logo-nav .panier a{
+    font-size: 23px;
+    color:var(--color-logo-nav);
+    text-decoration: none;
+}
+
+.logo-nav .panier a sup{
+    font-family: var(--font-family);
+}
+
+
+/* ================================================================================================================= */
+
+
+/*Styling for small screens*/
+@media screen and (max-width: 800px){
+    .logo-nav .login a span {
+        display:none;
+    }
+
+    .logo-nav .panier a{
+        font-size: 20px;
+    }
+}

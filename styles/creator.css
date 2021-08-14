@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+.creator{
+    margin-top: 600px ;
+    max-width: 100% ;
+    font-family: 'Atkinson Hyperlegible', sans-serif ;
+    margin-bottom: 60px ;
+}
+
+
+.creator .content img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.creator .description{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+.creator .description p{
+    margin-bottom: 20px;
+}
+
+.creator .description a{
+    border: 1px solid black;
+    padding: 10px 10px;
+    align-items: center;
+    margin-top: 45px ;
+    border-radius: 10px ;
+    text-decoration: none;
+    color: black ;
+}
+
+
+/* ================== responsivity for phone screen ========================= */
+
+@media screen and (max-width: 800px){
+    .creator {
+        margin-top: 50px;
+    }
+ }
+
+
+/* ==================================== responsivity for tablet ======================== */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .creator {
+        margin-top: 50px;
+    }
+}

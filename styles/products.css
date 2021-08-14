@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+    --root-color : #b78e64;
+    --root-font : 'Nunito', sans-serif;
+}
+
+
+.products {
+    margin-top: 100px ;
+    text-align : center ;
+}
+
+.products h1 {
+    font-family: var(--root-font) ;
+}
+
+
+.products .list_products {
+    margin-top : 100px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    margin-left : auto ;
+    margin-right: auto ;
+    padding : 5px 5px ;
+}
+
+
+.products .list_products .one_product {
+    flex-basis: 20% ;
+}
+
+
+.products .list_products .one_product .image {
+    border : 1px solid rgb(212, 208, 208) ;
+}
+
+.products .list_products .one_product .image img {
+    max-width : 100% ;
+}
+
+.products .list_products .one_product .image .trade_off {
+    background: transparent ;
+    position: relative ;
+    padding: 12px 10px ;
+}
+
+.products .list_products .one_product .image .trade_off a {
+    border: 2px solid black;
+    padding : 1px 10px ;
+    text-decoration:  none ;
+    font-weight: bold ;
+    font-family: var(--root-font) ;
+    border-radius: 7px ;
+    color : black ;
+}
+
+.products .list_products .one_product .image .trade_off a:last-child {
+    background: var(--root-color) ;
+    border-color : var(--root-color ) ;
+    color : white ;
+}
+
+
+.products .list_products .one_product .description {
+    font-family: var(--root-font) ;
+}
+
+
+.products .list_products .one_product .description .price {
+    margin-top  : 10px ;
+    font-weight : bold ; 
+}
+
+/* ================== responsivity for phone screen ========================= */
+
+@media screen and (max-width: 800px){
+    .products .list_products {
+        margin-top : 100px ;
+        display: flex ;
+        align-items: center ;
+        justify-content: space-evenly ;
+        padding : 0 ;
+    }
+
+    .products .list_products .one_product {
+        flex-basis: 50% ;
+    }
+
+    .products .list_products .one_product .image .trade_off a {
+        font-size : 2vw ;
+    }
+}
+
+
+
+/* ==================================== responsivity for tablet ======================== */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .products .list_products {
+        display: flex ;
+        align-items: center ;
+        justify-content: space-evenly ;
+        flex-wrap: wrap ;
+        padding : 0 ;
+    }
+
+    .products .list_products .one_product {
+        flex-basis: 25% ;
+    }
+
+    .products .list_products .one_product .image .trade_off a {
+        font-size : 1vw ;
+    }
+
+}
+
+/* =========================== large screen responsivity ===================================== */
+
+/* @media only screen and (min-width: 1025px) {
+   
+}  */

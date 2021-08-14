@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+    --root-color : #b78e64;
+    --root-font : 'Nunito', sans-serif;
+}
+
+
+.categorie{
+    background:  #f9f9f9 ;
+    text-align: center ;
+    margin-top : 40px ;
+}
+
+
+.categorie h1 {
+    font-family: var(--root-font) ;
+}
+
+
+.categorie .categorie_list {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding : 10px 10px ;
+    flex-wrap : wrap ;
+}
+
+.categorie .categorie_list a{
+    text-decoration: none ;
+    color: var(--root-color) ;
+}
+
+.categorie .categorie_list .one-categorie {
+    margin-top : 10px ;
+}
+
+.categorie .categorie_list .one-categorie .img img {
+    max-width : 100% ;
+}
+
+.categorie .categorie_list .one-categorie .title h6 {
+    font-family: var(--root-font);
+}
+
+
+/* ================== responsivity for phone screen ========================= */
+
+@media screen and (max-width: 800px){ 
+    .categorie .categorie_list .one-categorie {
+        flex-basis : 50% ;
+        width: 90% ;
+    }
+}

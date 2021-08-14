@@ -1,0 +1,138 @@
+.vintage {
+    margin-top:89px;
+    padding:10px 10px;
+    font-family: sans-serif;
+}
+
+.vintage .vintage-image {
+    position: absolute;
+}
+
+.vintage .vintage-image img{
+    max-width:100%;
+}
+
+.vintage .vintage-banner{
+    max-width: 56vw;
+    height: 35vh;
+    background: #b78e64;
+    color: #FFF;
+    border-radius: 10px ;
+    top:18rem;
+    padding:10px 10px;
+    margin-left: 450px;
+    position: relative;
+    text-align: center ;
+}
+
+.vintage .vintage-banner h1 {
+    margin-top:34px ;
+}
+
+.vintage .vintage-banner p {
+    margin-top:20px ;
+    margin-bottom: 20px ;
+}
+
+.vintage .vintage-banner a {
+    border:1px solid black;
+    border-radius: 10px ;
+    padding: 10px 10px ;
+    color: black ;
+    text-decoration: none ;
+    background: black;
+    color:white;
+}
+
+.vintage .vintage-banner a:hover {
+    border-color:white;
+    background: white ;
+    color: black ;
+}
+
+
+/* ================== responsivity for phone screen ========================= */
+
+@media screen and (max-width: 800px){ 
+
+    .vintage {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .vintage .vintage-image {
+        flex-basis : 100% ;
+        position: unset ;
+    }
+
+    .vintage .vintage-image img {
+        max-width: 100% ;
+    }
+
+    .vintage .vintage-banner {
+        flex-basis: 100% ;
+        max-width:100% ;
+        height:auto ;
+        margin: auto ;
+        border-radius: 0 ;
+        position: unset ;
+        top: 0 ;
+    }
+}
+
+
+/* ==================================== responsivity for tablet ======================== */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .vintage {
+        padding:0 ;
+        margin-bottom: 220px ;
+        display: flex ;
+        justify-content: space-between ;
+        align-items: center ;
+    }
+
+    .vintage .vintage-image  , .vintage .vintage-banner {
+        flex-basis : 100% ;
+        position: unset ;
+    }
+
+    .vintage .vintage-image img {
+        max-width: 100% ;
+        height : auto ;
+        display: block ;
+        margin-left : auto ;
+        margin-right : auto ;
+        border-radius : 10px ;
+    }
+
+    .vintage .vintage-banner {
+        max-width: 80% ;
+        background: #b78e64 ;
+        color: #FFF ;
+        border-radius: 10px ;
+        top: unset ;
+        padding: 0 ;
+        margin: 10px auto 20px auto ;
+        text-align: center ;
+    }
+
+    .vintage .vintage-banner h1 {
+        margin-top:20px ;
+    }
+
+
+}
+
+
+/* =========================== large screen responsivity ===================================== */
+
+/* @media only screen and (min-width: 1025px) {
+    body {
+	   background:red;
+   }
+} */

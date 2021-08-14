@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px ;
+    position: absolute ;
+    width: 98% ;
+    padding: 10px 10px ;
+    background: black ;
+    font-family: 'Atkinson Hyperlegible', sans-serif ;
+}
+
+
+.footer .top , .footer .middle , .footer .bottom{
+    flex-basis: 100% ;
+}
+
+
+
+/* ============================= top ====================== */
+
+.footer .top {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    color : white ;
+    padding: 20px 20px;
+}
+
+
+.footer .top .column {
+    flex-basis: auto ;
+    text-align: center ;
+}
+
+
+.footer .top .column h6 {
+    margin: 6px 0 6px 0;
+}
+
+
+.footer .top .column h6 a {
+    color : white ;
+    text-decoration: none ;
+    cursor: pointer ;
+}
+
+
+.footer .top .column h6 a i {
+    color : white ;
+}
+
+
+/* ======================== middle ======================== */
+
+.footer .middle {
+    color : white ;
+    border-top : 0.2px solid white ;
+    text-align: right ;
+    padding: 20px 20px ;
+}
+
+
+
+/* ======================= bottom ================== */
+
+.footer .bottom {
+    border-top : 0.2px solid white ;
+    color : white ;
+    text-align: right ;
+    color: white ;
+    padding: 20px 20px ;
+}
+
+.footer .bottom a{
+    text-decoration: none ;
+    color : white ;
+    cursor : pointer ;
+}
